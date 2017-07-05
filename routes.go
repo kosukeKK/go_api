@@ -11,10 +11,10 @@ func RegistersRoutes() {
 	r := gin.Default()
 
 	//commentHandler
-	r.GET("/comments", comments.Handler)
+	r.GET("v1/comments", comments.Handler)
 
 	//usersHandler
-	r.GET("/users", users.Handler)
+	r.GET("v1/users", users.Handler)
 
 	r.Run(":30000")
 }
